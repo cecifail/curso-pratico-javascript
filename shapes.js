@@ -1,5 +1,5 @@
 
-//Code for the square
+// code for the square
 console.group("squares")
 // const squareSide = 5;
 // console.log("the square sides measure: " + squareSide + "cm" + " each")
@@ -13,7 +13,7 @@ function squareArea(side) {
 }
 console.groupEnd()
 
-//code for triangle
+// code for triangle
 // const triangleSide1 = 6;
 // const triangleSide2 = 6;
 // const triangleBase = 4;
@@ -29,8 +29,6 @@ console.group("Triangles")
 //      + "cm."
 //     )
 
-// const triangleHeight = 5.5;
-
 function trianglePerimeter(side1,side2,base) {
     return side1 + side2 + base;
 }
@@ -44,9 +42,6 @@ console.groupEnd();
 // Code for circle
 console.group("Circles")
 
-// Radius
-// const circleRadius = 4;
-
 // Diameter
 function circleDiameter(radius){
     return radius * 2
@@ -56,7 +51,7 @@ function circleDiameter(radius){
 
 const PI = Math.PI;
 
-//Perimeter
+// Perimeter
 function circlePerimeter(radius){
     const diameter = circleDiameter(radius)
     return diameter * PI;
@@ -69,7 +64,18 @@ function circleArea (radius) {
 
 console.groupEnd()
 
+// Now we interact with the HTML
 
+function calculateSquarePerimeter(){
+    const input = document.getElementById("squareInput");
+    const value = input.value;
+    const perimeter = squarePerimeter(value);
+    alert("Square perimeter is: " + perimeter + "cm.");
+}
 
-
-
+function calculateSquareArea(){
+    const input = document.getElementById("squareInput");
+    const value = input.value;
+    const area = squareArea(value);
+    alert("Square Area is: " + area + "cm.");
+}

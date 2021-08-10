@@ -4,12 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geometric Shapes / Javascript activity on Platzi</title>
+    <title>Lazy Homework / a Platzi project</title>
+    <link rel="stylesheet" href="shapes.css">
+    <script src="./shapes.js"></script>
 </head>
+<header>
+    <p>Brain energy saver</p>
+    <span>Geometry lazy version</span>
+</header>
 <body>
-    <h1>
-        Geometric Shapes
-        <script src="./shapes.js"></script>
-    </h1>
+    <div class="main-text">
+        <p>Hey there you Lazy one, let´s start saving some brain energy </p>
+        <p>Click on the shape you want to start calculating </p>
+    </div>
+    <section class="square">
+        <h3>You picked square</h3>
+        <form>
+            <label class="squareLabel" for="squareInput">Just gimme the side (cms)</label>
+            <input class="squareInput" id="squareInput" type="number">
+            <button class="squarePerimeter" type="button" onclick="calculateSquarePerimeter()">Perimeter</button>
+            <button class="squareArea" type="button" onclick="calculateSquareArea()">Area</button>
+        </form>
+    </section>
 </body>
 </html>
