@@ -1,6 +1,11 @@
 body{
 margin: 0px;
 background-color: white;
+background-image:linear-gradient(to right,rgba(226, 226, 204, 0.17),rgba(243, 220, 171, 0.521));
+background-repeat: no-repeat;
+background-position: center center;
+background-size: cover;
+background-attachment: fixed;
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 header{
@@ -32,8 +37,8 @@ header span {
     border:5px solid rgb(159, 118, 197);
     border-radius: 30px;
     margin-top: 100px;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 80px;
+    margin-right: 80px; 
 }
 
 .main-shapes {
@@ -69,7 +74,7 @@ header span {
 
 .main-shapes__triangle:hover{
     cursor: pointer;
-    transform: scale(1.8);  
+    transform: scale(1.8);
     filter: invert(48%) sepia(30%) saturate(3207%) hue-rotate(190deg) brightness(95%) contrast(80%);
 }
 
@@ -77,4 +82,310 @@ header span {
     cursor: pointer;
     transform: scale(1.8);
     filter: invert(48%) sepia(30%) saturate(3207%) hue-rotate(190deg) brightness(95%) contrast(80%);
+}
+
+footer{
+    height:70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-top: 200px;
+    background-color:rgb(131, 133, 211);
+}
+.square{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 4px solid violet ;
+    margin-top:100px;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 30px;
+    font-family:'Gill Sans';
+    font-size: 30px;
+    margin-bottom: 300px;
+    height: 300px;
+}
+
+.square:hover{
+    background-image: linear-gradient( 90deg, hsl(283, 30%, 65%) 10%, #471e47 100%);
+    color: white;
+}
+
+.square-form{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 38px;
+}
+
+#squareLink{
+    font-weight: bolder;
+    font-size: 55px;
+    margin: 20px;
+}
+.squareLabel{
+    padding: 20px;
+    font-weight: bold;
+}
+
+.square input{
+    height: 25px;
+    width: 70px;
+    align-self: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border-color: black;
+}
+
+.squareButtons{
+    align-items:flex-start;
+    align-self:stretch;
+}
+
+.squarePerimeter{
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(49, 194, 199);
+}
+
+.squarePerimeter:hover{
+    border-color: white;
+    color: white;
+    background-color: violet;
+}
+
+.squareArea{
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(49, 194, 199);
+}
+
+.squareArea:hover{
+    border-color: white;
+    color: white;
+    background-color: violet;
+}
+
+.triangle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 4px solid violet ;
+    height: 650px;
+    padding-top:30px;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 30px;
+    font-family:'Gill Sans';
+    font-size: 30px;
+    margin-bottom: 300px;
+}
+
+.triangle:hover{
+    background-image: linear-gradient( 90deg, hsl(283, 30%, 65%) 10%, #471e47 100%);
+    color: white;
+}
+
+.triangle-form{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 38px;
+}
+
+#triangleLink{
+    font-weight: bolder;
+    font-size: 55px;
+    margin: 20px;
+}
+.triangle Label{
+    padding: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.triangleLabel4{
+    padding: 20px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+.triangle input{
+    height: 25px;
+    width: 70px;
+    align-self: center;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border-color: black;
+}
+
+.triangleButtons{
+    display: flex;
+    align-items:stretch;
+}
+
+.trianglePerimeter{
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(49, 194, 199);
+}
+
+.trianglePerimeter:hover{
+    border-color: white;
+    color: white;
+    background-color: violet;
+}
+
+.triangleArea{
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(49, 194, 199);
+}
+
+.triangleArea:hover{
+    border-color: white;
+    color: white;
+    background-color: violet;
+}
+.triangleClear{
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(49, 194, 199);
+}
+
+.triangleClear:hover{
+    border-color: white;
+    color: white;
+    background-color: violet;
+}
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 4px solid violet ;
+    padding-top:30px;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 30px;
+    font-family:'Gill Sans';
+    font-size: 30px;
+    margin-bottom: 60px;
+}
+
+.circle:hover{
+    background-image: linear-gradient( 90deg, hsl(283, 30%, 65%) 10%, #471e47 100%);
+    color: white;
+}
+
+.circle-form{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 38px;
+}
+
+#circleLink{
+    font-weight: bolder;
+    font-size: 55px;
+    margin: 20px;
+}
+.circleLabel{
+    padding: 20px;
+    font-weight: bold;
+}
+
+.circle input{
+    height: 25px;
+    width: 70px;
+    align-self: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border-color: black;
+}
+
+.circleButtons{
+    align-self:stretch;
+}
+
+.circlePerimeter{
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(49, 194, 199);
+}
+
+.circlePerimeter:hover{
+    border-color: white;
+    color: white;
+    background-color: violet;
+}
+
+.circleArea{
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(49, 194, 199);
+}
+
+.circleArea:hover{
+    border-color: white;
+    color: white;
+    background-color: violet;
+}
+
+.circleDiameter{
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(49, 194, 199);
+}
+
+.circleDiameter:hover{
+    border-color: white;
+    color: white;
+    background-color: violet;
 }
