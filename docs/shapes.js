@@ -136,3 +136,19 @@ function calculateCircleArea(){
     const area = circleArea(valueRadius);
     alert("Circle area is: " + area + "cm.")
 }
+
+function isoscelesTriangleHeight(bigTriangleSideA, bigTriangleSideB, bigTriangleSideBase){
+    if(bigTriangleSideA != bigTriangleSideB) {
+        console.error("A and B sides are not equal");
+    } else {
+        const littleTriangleSideB = bigTriangleSideBase / 2;
+        const littleTriangleSideBase = bigTriangleSideA;
+
+        const littleTriangleSideBSquare = littleTriangleSideB * littleTriangleSideB
+        const littleTriangleSideBaseSquare = littleTriangleSideBase * littleTriangleSideBase;
+        const littleTriangleSideA = Math.sqrt(littleTriangleSideBaseSquare - littleTriangleSideBSquare);
+
+        const bigTriangleSideHeight = littleTriangleSideA;
+        return bigTriangleSideHeight;
+    }
+}
